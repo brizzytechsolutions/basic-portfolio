@@ -51,4 +51,8 @@ function loadAontherImage() {
         .catch(err => console.log(err));
 }
 
+function toggleMenu(action) {
+    document.getElementById('mobileMenu').style.display = (action == 'open') ? 'block' : 'none';
+}
+
 loadBlogs();
